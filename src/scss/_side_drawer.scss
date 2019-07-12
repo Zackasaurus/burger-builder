@@ -1,12 +1,16 @@
 .SideDrawer {
     position: fixed;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
     width: 20rem;
     max-width: 70%;
     height: 100%;
     left: 0;
     top: 0;
     z-index: 200;
-    background-color: white;
+    background: rgb(235, 235, 235);
     padding: 2rem 1rem;
     transition: transform .3s ease-out;
 }
@@ -24,4 +28,21 @@
 
 .Close {
     transform: translateX(-100%);
+}
+
+.MenuBtn {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    z-index: 200000;
+    
+    &__Lines {
+        height: 2px;
+        width: 2rem;
+        background: white;
+    }
+
+
 }
