@@ -1,22 +1,20 @@
 import React from 'react'
 
-const Backdrop = (props) => {
-
+const BackdropSide = (props) => {
 
     let attachedClasses = ['Backdrop', 'Backdrop--Off']
 
     if (props.show) {
         attachedClasses = ['Backdrop', 'Backdrop--On']
     }
+
     return (
-        props.show ? <div
+        <div
             className={attachedClasses.join(' ')}
-            onClick={props.clicked}
-        ></div> : null
+            onClick={props.clicked}>
 
-
+        </div>
     )
-
 }
 
-export default Backdrop
+export default BackdropSide

@@ -1,12 +1,13 @@
 import React from 'react'
-
-const Toolbar = () => {
+import Logo from '../../Logo/Logo'
+import NavigationItems from '../NavigationItems/NavigationItems'
+const Toolbar = (props) => {
     return (
         <header className="Toolbar">
-            <div>MENU</div>
-            <div>LOGO</div>
-            <nav>
-                ...
+            <div onClick={props.open}>MENU</div>
+            <Logo className='Logo' />
+            <nav className='DesktopOnly'>
+                <NavigationItems />
             </nav>
         </header>
     )
